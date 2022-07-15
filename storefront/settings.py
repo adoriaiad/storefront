@@ -83,18 +83,6 @@ WSGI_APPLICATION = 'storefront.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'storedb',
-        'ENFORCED_SCHEMA': False,
-        'CLIENT': {
-            # mongodb://root:example@mongo:27017?authSource=admin
-            'host': 'mongodb://mongo:27017'
-        },
-    }
-}
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators

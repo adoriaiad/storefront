@@ -6,8 +6,8 @@ name = "pypi"
 [packages]
 django = "*"
 django-debug-toolbar = "*"
-djongo = "*"
 dnspython = "*"
+pymongo = {extras = ["gssapi", "snappy", "srv", "tls"], version = "*"}
 
 [dev-packages]
 autopep8 = "*"
