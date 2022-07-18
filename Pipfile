@@ -8,6 +8,7 @@ django = "*"
 django-debug-toolbar = "*"
 dnspython = "*"
 pymongo = {extras = ["gssapi", "snappy", "srv", "tls"], version = "*"}
+django-material = "*"
 
 [dev-packages]
 autopep8 = "*"

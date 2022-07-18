@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% include 'material/includes/material_css.html' %}
+{% include 'material/includes/material_js.html' %}
+<html lang="en">
+<head>
+  {% block title %}<title>Storefront</title>{% endblock %}
+</head>
+<body>
+  {% block sidebar %}<!-- insert default navigation text for every page -->{% endblock %}
+  {% block content %}<!-- default content text (typically empty) -->{% endblock %}
+</body>
+</html>

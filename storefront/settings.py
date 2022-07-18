@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'debug_toolbar',
     'store',
     'tags',
+    'material',
 ]
 
 MIDDLEWARE = [
@@ -82,7 +83,7 @@ WSGI_APPLICATION = 'storefront.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
-
+DB_NAME = 'mongodb://root:pssw@host.docker.internal:27017/mongo?authSource=admin'
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators

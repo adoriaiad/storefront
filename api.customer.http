@@ -1,0 +1,35 @@
+@baseUri=http://127.0.0.1:8000/customers
+
+###
+# @name CreateCustomer
+POST  {{baseUri}} HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Pinco",
+  "surname": "Pallo",
+}
+
+###
+# @name RetrieveCustomers
+GET  {{baseUri}} HTTP/1.1
+###
+
+###
+# @name RetrieveCustomer
+GET  {{baseUri}}/{{CreateCustomer.response.body.surname}} HTTP/1.1
+###
+
+###
+# @name DeleteCustomer
+DELETE {{baseUri}}/{{CreateCustomer.response.body.surname}} HTTP/1.1
+###
+
+###
+# @name PatchCustomer
+PATCH {{baseUri}}/{{CreateCustomer.response.body.surname}} HTTP/1.1
+Content-Type: application/json
+
+{
+  "surname": "Pallocchio "
+}
